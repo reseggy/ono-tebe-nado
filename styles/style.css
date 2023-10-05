@@ -1,20 +1,22 @@
 body {
 	margin: 0 auto;
-	width: 100vw;
+	width: 100%;
 }
 
 .header {
 	margin: 92px 50px;
-	display: flex;
-	max-width: 1340px;
-	justify-content: space-between;
 	min-height: 109px;
+	max-width: 1340px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
 }
 
 .header__menu {
-	display: flex;
-	align-items: center;
 	text-wrap: nowrap;
+	min-width: 388px;
+	justify-self: start;
 }
 
 .header__links-list {
@@ -46,9 +48,7 @@ body {
 }
 
 .header__logo {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	justify-content: center;
 }
 
 .address {
@@ -58,14 +58,21 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	max-width: 240px;
+	min-height: 97px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
 }
 
 .header__address {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	justify-content: center;
 	flex-wrap: wrap;
 	line-height: 135%;
+	justify-self: end;
 }
 
 .cover {
@@ -107,51 +114,40 @@ body {
 }
 
 .aligned-text {
-	display: block;
 	line-height: 115%;
 }
 
-.aligned-text_center {
+.text-block {
 	display: block;
+}
+
+.aligned-text_center {
+	text-align: center;
 	max-width: 1280px;
 }
 
 .aligned-text_right {
-	display: block;
+	text-align: right;
 }
 
-.aligned-text .letter-spacing-extended {
+.letter-spacing-extended {
 	letter-spacing: 60px;
-}
-
-.aligned-text .no-letter-spacing {
-	letter-spacing: 0px;
 }
 
 .aligned-text_center {
 	line-height: 100%;
-	text-align: center;
 }
 
-.aligned-text_center .letter-spacing-extended {
-	letter-spacing: 60px;
-}
-
-.aligned-text_center .no-letter-spacing {
+.no-letter-spacing {
 	letter-spacing: 0px;
 }
 
 .aligned-text_right {
-	text-align: right;
 	letter-spacing: 60px;
 }
 
 .aligned-text_right .letter-spacing-extended {
 	letter-spacing: 30px;
-}
-
-.aligned-text_right .no-letter-spacing {
-	letter-spacing: 0px;
 }
 
 .cover__description {
@@ -368,11 +364,21 @@ body {
 	text-decoration: none;
 }
 
+.footer__link {
+	color: #000;
+	font-family: Raleway;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
 .footer__menu-list {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
-  align-items: center;
+	align-items: center;
+	text-wrap: nowrap;
 }
 
 .footer__social-list {
