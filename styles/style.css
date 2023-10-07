@@ -54,18 +54,15 @@ body {
 	font-weight: 400;
 	max-width: 240px;
 	display: flex;
-	flex-direction: column;
-	align-self: center;
-	justify-content: center;
-}
-
-.header__address {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	line-height: 135%;
+}
+
+.header__address {
 	justify-self: end;
 }
 
@@ -338,7 +335,6 @@ body {
 
 .footer {
 	margin-top: 180px;
-	min-height: 97px;
 	display: flex;
 	justify-content: space-between;
 	margin: 180px 50px 90px 50px;
