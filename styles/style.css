@@ -124,6 +124,10 @@ body {
 	letter-spacing: 60px;
 }
 
+.aligned-text_center {
+	line-height: 100%;
+}
+
 .no-letter-spacing {
 	letter-spacing: 0px;
 }
